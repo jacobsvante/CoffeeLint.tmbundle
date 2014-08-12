@@ -7,9 +7,9 @@
 	<key>command</key>
 	<string>#!/bin/sh
 echo Syntax:
-coffee -cp $TM_FILEPATH 1&gt; /dev/null &amp;&amp; echo OK
+coffee -cp $TM_FILEPATH 1&gt; /dev/null &amp;&amp; echo "OK" || true
 echo "\nCoffeeLint:"
-coffeelint --nocolor $TM_FILEPATH</string>
+coffeelint --nocolor $TM_FILEPATH || true</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
